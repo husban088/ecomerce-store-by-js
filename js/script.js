@@ -177,6 +177,7 @@ window.addEventListener ("load" , function () {
       dispCartItem();
       cartNumberDisplay();
       cartPrice();
+      window.location.reload();
     });
   });
   

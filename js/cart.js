@@ -161,6 +161,7 @@ document.querySelectorAll(".reoveItem").forEach(removeBtn => {
     dispCartItem();
     cartNumberDisplay();
     cartPrice();
+    window.location.reload();
   });
 });
 
