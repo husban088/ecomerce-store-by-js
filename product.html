@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POWER Fitness | GYM Clothes</title>
+
+    <!-- ================== CSS FILE LINK ======================= -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <!-- ================== GOOGLE FONTS LINK ======================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <!-- ================== WEB SHORTCUT ICON ======================= -->
+
+    <link rel="shortcut icon" type="image/png" href="images/logo.avif">
+
+    <!-- ================== FONT AWESOME LINK ======================= -->
+
+    <script src="https://kit.fontawesome.com/dee3a677e8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- ================== HEADER NAVIGATION ======================= -->
+
+    <div class="header">
+
+        <div class="header__navbar">
+
+            <div class="header__logo">
+                <a href="index.html" class="logo"><img src="images/logo.avif" alt="IRONGEAR" class="store__logo"></a>
+        
+                    <input type="text" name="" id="searchBar" placeholder="Search" onkeyup="prodSearc()">
+                    <i class="fa-solid fa-magnifying-glass bar__search"></i>
+
+            </div>
+
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li"><a href="index.html" class="header__link">Home</a></li>
+                    <li class="header__li"><a href="product.html" class="header__link">Products</a></li>
+                    <li class="header__li"><a href="signup.html" class="header__link">Sign up</a></li>
+                    <li class="header__li"><a href="#name__cart" class="header__link" id="sign__succ">Account</a></li>
+                    <li class="header__li"><a href="#cart__side" class="cart header__link"><i class="fa-solid fa-cart-shopping cart__icon"></i><p id="cart__count">
+                     0
+                    </p></a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================== TOGGLE NAVBAR ======================== -->
+
+    <div id="nav__navbar">
+
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="index.html" class="nav__link" id="home__lick">
+                
+                <i class="fa-solid fa-house home__icon"></i>
+                <br>
+
+                Home</a></li>
+            <li class="nav__li"><a href="product.html" class="nav__link" id="home__lick">
+                
+                <i class="fa-solid fa-store home__icon"></i>
+                <br>
+
+                Products</a></li>
+            <li class="nav__li"><a href="#name__cart" class="nav__link nav__img" id="home__lick">
+                
+                <i class="fa-solid fa-user home__icon"></i>
+
+                <br>
+
+                Account</a></li>
+            <li class="nav__li"><a href="signup.html" class="nav__link" id="home__lick">
+                
+                <i class="fa-solid fa-user-plus home__icon"></i>
+
+                <br>
+
+                Sign up</a></li>
+            <li class="nav__li"><a href="#cart__side" class="nav__link"><i class="fa-solid fa-cart-shopping cart__icon" id="cart__nav"></i><p id="cart__count" class="cart__counte">
+                0
+            </p></a></li>
+        </ul>
+
+    </div>
+
+                <!-- ================== NAME CART DESIGN ====================== -->
+
+                <div class="sidebar" id="name__cart">
+
+                    <div class="close__icon">
+                        <a href="#" class="close__link"><i class="fa-solid fa-xmark sidebar__close"></i></a>
+                    </div>
+        
+                    <div class="name__sec">
+                        <div class="name__text">
+                            <h3 class="name__text"><span class="wel__text">Welcome,</span> <span class="sign__inw"></span><span class="loginIN"></span></h3>
+                        </div>
+            
+                        <div class="view__prof">
+                            <a href="login.html" class="view__link">View profile</a>
+                        </div>
+                    </div>
+
+                    <div class="logout__btn" id="name__bbtnn">
+                        <button type="submit" class="logout-btn name__btn" id="logout_btn">Logout</button>
+                    </div>
+                  
+                </div>    
+
+    <!-- ========================= ADD PRODUCTS ======================= -->
+
+    <div class="add__section">
+
+        <form id="productForm">
+            
+            <input type="file" id="imageInput" accept="images/jpeg,images/png, images/jpg" onchange="showImagePreview(event)" required>
+
+              <div class="img__hov">
+
+                <label for="imageInput">
+                    <span class="image__span">
+                     <i class="fa-solid fa-plus add__icon"></i>
+                    </span>
+                 </label>
+                 <img id="imagePreview" src="images/profileimg.webp" alt="Image Preview">
+
+              </div>
+
+
+
+            <input type="text" id="productName" placeholder="Product Name" required>
+            
+            <input type="text" id="productPrice" placeholder="Product Price" required>
+    
+            <!-- <input type="text" id="productSize" placeholder="Product Size" required> -->
+
+            <button type="submit" onclick="addProduct(event)" id="add__bton">Add Product</button>
+        </form>
+
+        <div class="product__sec">
+            <div id="productList"></div>
+        </div>
+
+
+    </div>
+
+
+    <!-- ================== SIDEBAR CART DESIGN ====================== -->
+
+    <div class="sidebar" id="cart__side">
+
+        <div class="close__icon">
+            <a href="#" class="close__link"><i class="fa-solid fa-xmark sidebar__close"></i></a>
+        </div>
+
+        <div class="head">
+            <p>My Cart</p>
+        </div>
+
+        <div class="cartdisp"></div>
+
+        <div class="totalPriceCart">
+            <div class="subtotal">total</div>
+            <div class="priceView">
+               <h3>00</h3> 
+            </div>
+        </div>
+
+        <div class="buy__btn">
+            <a href="cart.html" class="buy__button">View cart</a>
+        </div>
+
+    </div>
+
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <script src="js/login.js"></script> -->
+    <!-- <script src="js/profile.js"></script> -->
+    <script src="js/product.js"></script>
+</body>
+
+<script>
+    let signIn = localStorage.getItem("signin");
+
+var logout_btnes = document.querySelector("#logout_btn");
+
+var view__link = document.querySelector(".view__prof");
+var wel__text = document.querySelector(".wel__text");
+var sign__inw = document.querySelector(".sign__inw");
+
+if(signIn === "true") {
+    logout_btnes.style.display = "block";
+    view__link.style.display = "block";
+    wel__text.style.display = "block";
+} else {
+    logout_btnes.style.display = "none";
+    view__link.style.display = "none";
+    sign__inw.style.display = "none";
+    wel__text.innerHTML = "Please create a account";
+}
+
+function logPage(e) {
+    e.preventDefault();
+
+    localStorage.clear();
+
+    location.href = "index.html";
+
+    var logout_btnes = document.querySelector("#logout_btn");
+
+    logout_btnes.style.display = "none";
+}
+
+var logout_btnes = document.querySelector("#logout_btn");
+
+logout_btnes.addEventListener("click", logPage);
+
+window.onload = function() {
+
+
+
+    let welcome__namewe = document.querySelector(".welcome__namew");
+
+
+let saveName = localStorage.getItem("saveName");
+if(saveName === "true") {
+    let welcome__namewe = localStorage.getItem("welcomeName");
+    document.querySelector(".loginIN").innerHTML = welcome__namewe;
+
+    let sign__inw = document.querySelector(".sign__inw");
+
+    sign__inw.style.display = "none";
+
+
+    // let welcome__namew = document.querySelector(".welcome__namew");
+
+    // welcome__namew.style.display = "block";
+
+    // let welcome__name = document.querySelector(".welcome__name");
+
+    // welcome__name.style.display = "none";
+}
+
+
+let userName = localStorage.getItem("name");
+
+document.querySelector(".sign__inw").innerHTML = userName;
+
+}
+
+</script>
+
+</html>

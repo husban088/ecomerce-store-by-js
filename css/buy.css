@@ -1,0 +1,132 @@
+
+.cart__tot {
+    display: none;
+}
+
+.cart__price {
+    transform: translate(-11rem, 1rem);
+    font-size: 1.4rem;
+}
+
+.cart__name {
+    transform: translate(-0.1rem, -2rem);
+    font-size: 1.4rem;
+}
+
+.cart__quan {
+    transform: translate(-7rem, 0.1rem);
+    border: 1px solid #000;
+    padding: 0.5rem 2rem;
+    border-radius: 3px;
+}
+
+.remove__icon {
+    transform: translateX(-6rem);
+  }
+
+ 
+  #cart__image {
+    width: 15%;
+  }
+
+  @media only screen and (max-width:900px) {
+    .cont__form {
+        position: relative;
+        top: 50rem;
+      }
+
+      .prod__cont {
+        margin-top: 7rem;
+      }
+
+      #cart__image {
+        width: 15%;
+        transform: translateX(-5rem);
+      }
+
+      .cart__price {
+        transform: translate(-18rem, 1rem);
+        font-size: 1.4rem;
+    }
+    
+    .cart__name {
+        transform: translate(-7.6rem, -2rem);
+        font-size: 1.4rem;
+    }
+    
+    .cart__quan {
+        transform: translate(-9rem, 0.1rem);
+        border: 1px solid #000;
+        padding: 0.5rem 2rem;
+        border-radius: 3px;
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    .cartlist{
+        transform: translateX(2rem);
+    }
+
+    .cart__quan {
+        transform: translate(-11rem, 0.1rem);
+        border: 1px solid #000;
+        padding: 0.5rem 2rem;
+        border-radius: 3px;
+    }
+
+    .cart__name {
+        transform: translate(-7rem, -2rem);
+        font-size: 1.4rem;
+    }
+
+    .remove__icon {
+        transform: translateX(-10rem);
+      }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .cart__price {
+        transform: translate(-16rem, 1rem);
+        font-size: 1.4rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .cart__price {
+        transform: translate(-16rem, 1rem);
+        font-size: 1.4rem;
+    }
+
+    #cart__image {
+        width: 19%;
+        transform: translateX(-5rem);
+      }
+
+      .cart__quan {
+        transform: translate(-8rem, 0.1rem);
+        border: 1px solid #000;
+        padding: 0.5rem 2rem;
+        border-radius: 3px;
+    }
+
+    .remove__icon {
+        transform: translateX(-7rem);
+      }
+
+    .cart__name {
+        transform: translate(-6rem, -1.7rem);
+        font-size: 1.4rem;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .cart__price {
+        transform: translate(-14rem, 1rem);
+        font-size: 1.4rem;
+    }
+
+    .cart__name {
+        transform: translate(-5rem, -1.7rem);
+        font-size: 1.4rem;
+    }
+  } 

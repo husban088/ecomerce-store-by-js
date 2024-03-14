@@ -1,1 +1,1 @@
-# ecomerce-store-by-js
+# store-by-js

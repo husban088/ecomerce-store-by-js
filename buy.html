@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POWER Fitness | GYM Clothes</title>
+
+    <!-- ================== CSS FILE LINK ======================= -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/buy.css">
+
+    <!-- ================== GOOGLE FONTS LINK ======================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <!-- ================== WEB SHORTCUT ICON ======================= -->
+
+    <link rel="shortcut icon" type="image/png" href="images/logo.avif">
+
+    <!-- ================== FONT AWESOME LINK ======================= -->
+
+    <script src="https://kit.fontawesome.com/dee3a677e8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- =================== HEADER NAVBAR ======================== -->
+    <div class="header">
+
+        <div class="header__navbar">
+
+            <div class="header__logo">
+                <a href="index.html" class="logo"><img src="images/logo.avif" alt="IRONGEAR" class="store__logo"></a>
+
+                <input type="text" name="" id="searchBar" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass bar__search"></i>
+
+            </div>
+
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li"><a href="index.html" class="header__link">Home</a></li>
+                    <li class="header__li"><a href="product.html" class="header__link">Products</a></li>
+                    <li class="header__li"><a href="signup.html" class="header__link">Sign up</a></li>
+                    <li class="header__li"><a href="#name__cart" class="header__link" id="sign__succ">
+                        Account
+                        </a></li>
+                    <li class="header__li"><a href="cart.html" class="cart header__link"><i
+                                class="fa-solid fa-cart-shopping cart__icon"></i>
+                            <p id="cart__count">
+                                0
+                            </p>
+                        </a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================== TOGGLE NAVBAR ======================== -->
+
+
+    <div id="nav__navbar">
+
+        <ul class="nav__ul">
+            <li class="nav__li"><a href="index.html" class="nav__link" id="home__lick">
+                
+                <i class="fa-solid fa-house home__icon"></i>
+                <br>
+
+                Home</a></li>
+            <li class="nav__li"><a href="product.html" class="nav__link" id="home__lick">
+                
+                <i class="fa-solid fa-store home__icon"></i>
+                <br>
+
+                Products</a></li>
+            <li class="nav__li"><a href="#name__cart" class="nav__link nav__img" id="home__lick">
+
+                <i class="fa-solid fa-user home__icon"></i>
+
+                <br>
+
+                Account
+                </a></li>
+            <li class="nav__li"><a href="signup.html" class="nav__link" id="home__lick">
+                
+                <i class="fa-solid fa-user-plus home__icon"></i>
+
+                <br>
+
+                Sign up</a></li>
+            <li class="nav__li"><a href="cart.html" class="nav__link"><i
+                        class="fa-solid fa-cart-shopping cart__icon" id="cart__nav"></i>
+                    <p id="cart__count" class="cart__counte">
+                   0
+                    </p>
+                </a></li>
+        </ul>
+
+    </div>
+
+              <!-- ================== NAME CART DESIGN ====================== -->
+
+                <div class="sidebar" id="name__cart">
+
+                    <div class="close__icon">
+                        <a href="#" class="close__link"><i class="fa-solid fa-xmark sidebar__close"></i></a>
+                    </div>
+        
+                    <div class="name__sec">
+                        <div class="name__text">
+                            <h3 class="name__text">Welcome, <span class="sign__inw"></span></h3>
+                        </div>
+            
+                        <div class="view__prof">
+                            <a href="login.html" class="view__link">View profile</a>
+                        </div>
+                    </div>
+
+                    <div class="logout__btn" id="name__bbtnn">
+                        <button type="submit" class="logout-btn name__btn" id="logout_btn">Logout</button>
+                    </div> 
+                  
+                </div>    
+
+    <!-- ================== SIDEBAR CART DESIGN ====================== -->
+
+    <!-- <div class="sidebar" id="cart__side">
+
+        <div class="close__icon">
+            <a href="#" class="close__link"><i class="fa-solid fa-xmark sidebar__close"></i></a>
+        </div>
+
+        <div class="head">
+            <p>My Cart</p>
+        </div>
+
+        <div class="cartdisp" id="cartdisp"></div>
+
+        <div class="totalPriceCart">
+            <div class="subtotal">total</div>
+            <div class="priceView">
+               <h2>00</h2> 
+            </div>
+        </div>
+
+        <div class="buy__btn">
+            <a href="buy.html" class="buy__button">View cart</a>
+        </div>
+
+    </div> -->
+
+    <!-- =================== BUY SECTION ======================== -->
+
+    <section class="user__con" id="user__con">
+        <div class="row">
+            <div class="col-1-of-2" id="cont__section">
+                <form class="cont__form">
+
+                    <div class="cont__head">
+                        <p class="cont__text">Contact</p>
+                    </div>
+
+                    <div class="cont__inpts">
+                        <!-- <input type="email" class="con__inpt" name="text" placeholder="Email" required> -->
+
+                        <!-- <p class="con__inpt" id="con__inpt"><span class="contact__input"></span></p> -->
+
+                        <p id="con__con"><span class="con__inpt" id="con__inpt"></span><span class="contact__input"></span></p>
+
+                    </div>
+
+                    <div class="cont__head del__head">
+                        <p class="cont__text">Delivery</p>
+                    </div>
+
+                    <div class="coun__con">
+                        <select name="country" id="country" class="count__slec" required>
+                            <option value="country" class="count__opt">Pakistan</option>
+                            <option value="country" class="count__opt">Germany</option>
+                            <option value="country" class="count__opt">England</option>
+                            <option value="country" class="count__opt">Australia</option>
+                        </select>
+                    </div>
+
+                    <div class="name__input">
+                        <input type="text" class="name__inpt" placeholder="First name" required>
+                        <input type="text" class="name__inpt" placeholder="Last name" required>
+                    </div>
+
+                    <div class="cont__inpts add__con">
+                        <input type="text" class="cont__inpt" name="text" placeholder="Address" required>
+                    </div>
+
+                    <div class="name__input">
+                        <input type="text" class="name__inpt" placeholder="City" required>
+                        <input type="text" class="name__inpt" placeholder="Postal code" required>
+                    </div>
+
+                    <div class="cont__inpts">
+                        <input type="number" class="cont__inpt" name="text" placeholder="Phone" required>
+                    </div>
+
+                    <div class="cont__head">
+                        <p class="cont__text">Shipping method</p>
+                    </div>
+
+                    <div class="ship__con">
+                        <p class="ship__text">Free Shipping</p>
+                        <p class="ship__text">Free</p>
+                    </div>
+
+                    <div class="cont__head">
+                        <p class="cont__text">Payment</p>
+                        <p class="trans__text">All transactions are secure and encrypted.</p>
+                    </div>
+
+                    <div class="pay__con">
+                        <div class="visa__con">
+                            <p class="card__text">Debit-Credit Card</p>
+
+                            <div class="visa__img">
+                                <img src="images/visa.svg" alt="" class="visa__log">
+                                <img src="images/visa2.svg" alt="" class="visa__log">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="cash__con">
+                        <p class="cash__text">Cash on delivery (COD)</p>
+                    </div>
+
+                    <div class="cash__con">
+                        <p class="cash__text">Bank Deposit</p>
+                    </div>
+
+                    <div class="cash__con">
+                        <p class="cash__text">Jazz Cash</p>
+                    </div>
+
+                    <div class="comp__button">
+                        <button type="submit" class="comp__btn">Pay now</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-1-of-2">
+                <div class="prod__cont">
+
+                    <div class="cartdisp"></div>
+
+                    <div class="totalPriceCart">
+                        <div class="subtotal">total</div>
+                        <div class="priceView">
+                           <h3>00</h3> 
+                        </div>
+                    </div>
+
+                    <div class="comp__button" id="comp__button">
+                        <button type="submit" class="comp__btn">Pay now</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <script src="js/login.js"></script>
+    <script src="js/signup.js"></script> -->
+    <script src="js/buy.js"></script>
+    <!-- <script src="js/profile.js"></script> -->
+    <!-- <script src="js/login.js"></script>  -->
+</body>
+
+<script>
+    let signIn = localStorage.getItem("signin");
+
+var logout_btnes = document.querySelector("#logout_btn");
+
+var view__link = document.querySelector(".view__link");
+
+if(signIn === "true") {
+    logout_btnes.style.display = "block";
+    view__link.style.display = "block";
+} else {
+    logout_btnes.style.display = "none";
+    view__link.style.display = "none";
+}
+
+function logPage(e) {
+    e.preventDefault();
+
+    localStorage.clear();
+
+    location.href = "login.html";
+
+    var logout_btnes = document.querySelector("#logout_btn");
+
+    logout_btnes.style.display = "none";
+}
+
+var logout_btnes = document.querySelector("#logout_btn");
+
+logout_btnes.addEventListener("click", logPage);
+
+window.onload = function() {
+    let userName = localStorage.getItem("email");
+
+document.querySelector("#con__inpt").innerHTML = userName;
+
+let userNamew = localStorage.getItem("name");
+
+document.querySelector(".sign__inw").innerHTML = userNamew;
+
+
+let saveName = localStorage.getItem("saveName");
+
+if(saveName === "true") {
+    let welcomeEmail = localStorage.getItem("welcomeEmail");
+
+    document.querySelector(".contact__input").innerHTML = welcomeEmail;
+
+    let con__inpt = document.querySelector("#con__inpt");
+    con__inpt.style.display = "none"
+}
+
+
+}
+
+</script>
+
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POWER Fitness | GYM Clothes</title>
+
+    <!-- ================== CSS FILE LINK ======================= -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+
+    <!-- ================== GOOGLE FONTS LINK ======================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ================== WEB SHORTCUT ICON ======================= -->
+
+    <link rel="shortcut icon" type="image/png" href="images/logo.avif" />
+
+    <!-- ================== FONT AWESOME LINK ======================= -->
+
+    <script
+      src="https://kit.fontawesome.com/dee3a677e8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- ================== HEADER NAVIGATION ======================= -->
+
+    <div class="header">
+      <div class="header__navbar">
+        <div class="header__logo">
+          <a href="index.html" class="logo"
+            ><img src="images/logo.avif" alt="IRONGEAR" class="store__logo"
+          /></a>
+
+          <input
+            type="text"
+            name=""
+            id="searchBar"
+            placeholder="Search"
+            onkeyup="serach()"
+          />
+          <i class="fa-solid fa-magnifying-glass bar__search"></i>
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__ul">
+            <li class="header__li">
+              <a href="index.html" class="header__link">Home</a>
+            </li>
+            <li class="header__li">
+              <a href="product.html" class="header__link">Products</a>
+            </li>
+            <li class="header__li">
+              <a href="signup.html" class="header__link">Sign up</a>
+            </li>
+            <li class="header__li">
+              <a
+                href="#name__cart"
+                class="header__link acc__link"
+                id="sign__succ"
+                ><p class="sign__inp">Account</p></a
+              >
+            </li>
+            <li class="header__li">
+              <a href="#cart__side" class="cart header__link"
+                ><i class="fa-solid fa-cart-shopping cart__icon"></i>
+                <p id="cart__count">0</p></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- =================== TOGGLE NAVBAR ======================== -->
+
+    <div id="nav__navbar">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a href="index.html" class="nav__link" id="home__lick">
+            <i class="fa-solid fa-house home__icon"></i>
+            <br />
+            Home</a
+          >
+        </li>
+        <li class="nav__li">
+          <a href="product.html" class="nav__link" id="home__lick">
+            <i class="fa-solid fa-store home__icon"></i>
+            <br />
+
+            Products</a
+          >
+        </li>
+        <li class="nav__li">
+          <a href="signup.html" class="nav__link" id="home__lick">
+            <i class="fa-solid fa-user-plus home__icon"></i>
+
+            <br />
+
+            Sign up</a
+          >
+        </li>
+        <li class="nav__li">
+          <a
+            href="#name__cart"
+            class="nav__link"
+            id="home__lick"
+            id="sign__succ"
+          >
+            <i class="fa-solid fa-user home__icon"></i>
+
+            <br />
+
+            Account</a
+          >
+        </li>
+        <li class="nav__li">
+          <a href="#cart__side" class="cart nav__link"
+            ><i class="fa-solid fa-cart-shopping cart__icon" id="cart__nav"></i>
+            <p id="cart__count" class="cart__counte">0</p></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ================== NAME CART DESIGN ====================== -->
+
+    <div class="sidebar" id="name__cart">
+      <div class="close__icon">
+        <a href="#" class="close__link"
+          ><i class="fa-solid fa-xmark sidebar__close"></i
+        ></a>
+      </div>
+
+      <div class="name__sec">
+        <div class="name__text">
+          <h3 class="name__text">
+            <span class="wel__text">Welcome,</span>
+            <span class="sign__inw"></span><span class="loginIN"></span>
+          </h3>
+        </div>
+
+        <div class="view__prof">
+          <a href="login.html" class="view__link">View profile</a>
+        </div>
+      </div>
+
+      <div class="logout__btn" id="name__bbtnn">
+        <button type="submit" class="logout-btn name__btn" id="logout_btn">
+          Logout
+        </button>
+      </div>
+    </div>
+
+    <!-- ================== SIDEBAR CART DESIGN ====================== -->
+
+    <div class="big__ban">
+      <img src="images/FRONT_BANNER_..webp" alt="" class="big__image" />
+    </div>
+
+    <section id="prod__con">
+      <div class="row">
+        <div id="prod__sec">
+          <div class="col-1-of-4" id="box__one">
+            <div class="prod__box">
+              <div class="prod__image">
+                <img src="images/ms1.webp" alt="men thsirt" class="prod__img" />
+              </div>
+
+              <div class="prod__details">
+                <h3 class="prod__name">camo Tee</h3>
+                <p>
+                         Rs, <span class="prod__price">1500</span>
+                </p>
+              </div>
+
+              <div class="prod__button">
+                <button class="prod__btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-4" id="box__two">
+            <div class="prod__box">
+              <div class="prod__image">
+                <img src="images/slide.webp" alt="slide" class="prod__img" />
+              </div>
+
+              <div class="prod__details">
+                <h3 class="prod__name">Signature Slides</h3>
+                <p>
+                         Rs, <span class="prod__price">1500</span>
+                </p>
+              </div>
+
+              <div class="prod__button">
+                <button class="prod__btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-4" id="box__three">
+            <div class="prod__box">
+              <div class="prod__image">
+                <img src="images/mwhod.webp" alt="jacket" class="prod__img" />
+              </div>
+
+              <div class="prod__details">
+                <h3 class="prod__name">Olympus Hoodie</h3>
+                <p>
+                         Rs, <span class="prod__price">1500</span>
+                </p>
+              </div>
+
+              <div class="prod__button">
+                <button class="prod__btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-4" id="box__four">
+            <div class="prod__box">
+              <div class="prod__image">
+                <img
+                  src="images/crgpnt.webp"
+                  alt="men trouser"
+                  class="prod__img"
+                />
+              </div>
+
+              <div class="prod__details">
+                <h3 class="prod__name">Revival Pants</h3>
+                <p>
+                         Rs, <span class="prod__price">1500</span>
+                </p>
+              </div>
+
+              <div class="prod__button">
+                <button class="prod__btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CART SIDE BAR ====================== -->
+
+    <div class="sidebar" id="cart__side">
+      <div class="close__icon">
+        <a href="#" class="close__link"
+          ><i class="fa-solid fa-xmark sidebar__close"></i
+        ></a>
+      </div>
+
+      <div class="head">
+        <p>My Cart</p>
+      </div>
+
+      <div class="cartdisp"></div>
+
+      <div class="totalPriceCart">
+        <div class="subtotal">total</div>
+        <div class="priceView">
+          <h2><span>Rs,</span> <span class="total__price">00</span></h2>
+        </div>
+      </div>
+
+      <div class="buy__btn">
+        <a href="cart.html" class="buy__button">View cart</a>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <!-- <script src="js/cart.js"></script> -->
+    <!-- <script src="js/login.js"></script> -->
+    <!-- <script src="js/profile.js"></script> -->
+    <!-- <script src="js/buy.js"></script> -->
+  </body>
+
+  <script>
+    function logPage(e) {
+      e.preventDefault();
+
+      localStorage.clear();
+
+      location.href = "index.html";
+
+      var logout_btnes = document.querySelector("#logout_btn");
+
+      logout_btnes.style.display = "none";
+    }
+
+    var logout_btnes = document.querySelector("#logout_btn");
+
+    logout_btnes.addEventListener("click", logPage);
+
+    let signIn = localStorage.getItem("signin");
+
+    var logout_btnes = document.querySelector("#logout_btn");
+    var view__link = document.querySelector(".view__prof");
+    var wel__text = document.querySelector(".wel__text");
+    var sign__inw = document.querySelector(".sign__inw");
+
+    if (signIn === "true") {
+      logout_btnes.style.display = "block";
+      view__link.style.display = "block";
+      wel__text.style.display = "block";
+    } else {
+      logout_btnes.style.display = "none";
+      view__link.style.display = "none";
+      wel__text.innerHTML = "Please create a account";
+      sign__inw.style.display = "none";
+    }
+
+    window.onload = function () {
+      let welcome__namewe = document.querySelector(".welcome__namew");
+
+      let saveName = localStorage.getItem("saveName");
+      if (saveName === "true") {
+        let welcome__namewe = localStorage.getItem("welcomeName");
+        document.querySelector(".loginIN").innerHTML = welcome__namewe;
+
+        let sign__inw = document.querySelector(".sign__inw");
+
+        sign__inw.style.display = "none";
+
+        // let welcome__namew = document.querySelector(".welcome__namew");
+
+        // welcome__namew.style.display = "block";
+
+        // let welcome__name = document.querySelector(".welcome__name");
+
+        // welcome__name.style.display = "none";
+      }
+
+      let userName = localStorage.getItem("name");
+
+      document.querySelector(".sign__inw").innerHTML = userName;
+    };
+  </script>
+</html>
