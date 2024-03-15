@@ -2621,11 +2621,19 @@ text-align: center;
 
 .comp__button {
   margin-top: 2rem;
+  transform: translateX(8rem);
+}
+
+@media only screen and (max-width: 1150px) {
+  .comp__button {
+    margin-top: 2rem;
+    transform: translateX(5rem);
+  }
 }
 
 .comp__btn {
   background-color: #105989;
-  padding: 1rem 21rem;
+  padding: 1rem 19rem;
   color: #fff;
   font-size: 1.7rem;
   border-radius: 3px;
@@ -2636,13 +2644,13 @@ text-align: center;
 
 @media only screen and (max-width: 1100px) {
   .comp__btn {
-    padding: 1rem 20rem;
+    padding: 1rem 17rem;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .comp__btn {
-    padding: 1rem 17rem;
+    padding: 1rem 15rem;
   }
 }
 
@@ -2662,9 +2670,6 @@ text-align: center;
   transform: translateX(5rem);
 }
 
-#comp__button {
-  display: none;
-}
 
 @media only screen and (max-width: 900px) {
   #cont__section {
@@ -2673,12 +2678,9 @@ text-align: center;
   }
 
   .comp__button {
-    display: none;
+    margin-bottom: 5rem;
   }
-
-  #comp__button {
-    display: block;
-  }
+  
 
   .comp__btn {
     padding: 1rem 16.8rem;

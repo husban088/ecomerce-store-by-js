@@ -117,7 +117,7 @@
     }
 
     .remove__icon {
-        transform: translateX(-17rem);
+        transform: translateX(-15rem);
       }
   }
 
@@ -134,7 +134,7 @@
     }
 
     .remove__icon {
-      transform: translateX(-14rem);
+      transform: translateX(-12rem);
     }
 
     .cartlist {
@@ -150,6 +150,7 @@
 
     .cartlist {
       transform: translateX(1rem);
+      margin-bottom: 9rem;
     }
 
     .quan__boxes {
@@ -168,7 +169,7 @@
       }
 
     .remove__icon {
-        transform: translateX(-21rem);
+        transform: translateX(-18rem);
       }
 
     .cart__name {
@@ -179,18 +180,19 @@
 
   @media only screen and (max-width: 350px) {
     .cart__price {
-        transform: translate(-10rem, 1rem);
+        transform: translate(-13rem, 2.5rem);
         font-size: 1.4rem;
     }
 
     .cartlist {
       transform: translateX(-1.5rem);
+      margin-bottom: 11rem;
     }
 
     .quan__boxes {
       padding: 0.7rem 1rem;
       width: 25%;
-      transform: translate(-16rem, 5rem);
+      transform: translate(-18rem, 7rem);
     }
 
 
@@ -200,7 +202,7 @@
     }
 
     .cart__name {
-        transform: translate(-3.5rem, -1.7rem);
+        transform: translate(-3.5rem, -2.5rem);
         font-size: 1.4rem;
     }
 
@@ -211,7 +213,7 @@
 
   @media only screen and (max-width: 320px) {
     .cart__price {
-        transform: translate(-10rem, 1rem);
+        transform: translate(-11rem, 2rem);
         font-size: 1.4rem;
     }
 
@@ -221,8 +223,8 @@
 
     .quan__boxes {
       padding: 0.7rem 1rem;
-      width: 25%;
-      transform: translate(-15.5rem, 5rem);
+      width: 32%;
+      transform: translate(-15.5rem, 7rem);
     }
 
 
@@ -232,7 +234,7 @@
     }
 
     .cart__name {
-        transform: translate(-3.5rem, -1.7rem);
+        transform: translate(-3.5rem, -2.5rem);
         font-size: 1.4rem;
     }
 
