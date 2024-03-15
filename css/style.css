@@ -1607,7 +1607,7 @@ body {
 .delete__btn {
   position: relative;
   top: -32rem;
-  left: 5rem;
+  left: 12rem;
   filter: opacity(0.8);
 }
 
@@ -1709,8 +1709,8 @@ body {
   }
 
   .delete__btn {
-    top: -29.8rem;
-    left: 3rem;
+    top: -29rem;
+    left: 10.5rem;
   }
 }
 
@@ -1726,8 +1726,8 @@ body {
   }
 
   .delete__btn {
-    top: -26.5rem;
-    left: 1.5rem;
+    top: -26rem;
+    left: 9rem;
     font-size: 1.3rem;
     padding: 0.5rem 1rem !important;
   }

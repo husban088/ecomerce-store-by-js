@@ -72,7 +72,6 @@ window.addEventListener ("load" , function () {
     localStorage.setItem("prdInCart", JSON.stringify(cartItem));
     cartNumberDisplay();
     location.href = "#cart__side";
-    window.location.reload();
   }
   
   function cartNumberDisplay() {
@@ -230,7 +229,7 @@ window.addEventListener ("load" , function () {
 
     // for add the product to the page
 
-        const prod__sec = document.getElementById("prod__sec");
+        const prod__sec = document.querySelector("#prod__sec");
         let box__four = document.querySelector("#box__four"); 
         const productArr = JSON.parse(localStorage.getItem("productsList"));
         localStorage.setItem("addHome", true);        
