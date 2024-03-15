@@ -2,11 +2,15 @@
 
 let comp__btn = document.querySelector(".comp__btn");
 
-function comp__btwn() {
-    localStorage.clear();
-}
+let inputValue = document.querySelector("#inputValue");
 
-comp__btn.addEventListener("click", comp__btwn);
+comp__btn.addEventListener("click", () => {
+  if(inputValue.value.length === 0) {
+    alert("Please fill all inputs");
+  } else {
+    localStorage.removeItem("prdInCart");
+  }
+})
 
 
 // Creating the Products Array
@@ -76,6 +80,10 @@ function cartNumberDisplay() {
   document.querySelector(".cart__counte").textContent = cartNumbers;
 }
 
+let subtotal = document.querySelector(".subtotal");
+let priceView = document.querySelector(".priceView");
+let continue__button = document.querySelector(".continue__button");
+
 function dispCartItem() {
   let html = "";
   let cartItem = JSON.parse(localStorage.getItem("prdInCart")) || [];
@@ -97,6 +105,17 @@ function dispCartItem() {
       </div>`;
   });
   document.querySelector(".cartdisp").innerHTML = html;
+
+  if(html.length === 0) {
+    subtotal.style.display = "none";
+    priceView.style.display = "none";
+    continue__button.style.display = "block";
+  } else {
+    subtotal.style.display = "block";
+    priceView.style.display = "block";
+    continue__button.style.display = "none";
+  }
+
 }
 dispCartItem();
 
@@ -157,7 +176,7 @@ function updateQuantity(input) {
 function cartPrice() {
   let cartItem = JSON.parse(localStorage.getItem("prdInCart")) || [];
   let subTotal = cartItem.reduce((acc, item) => acc + item.totalPrice, 0);
-  document.querySelector(".priceView h2").textContent = subTotal;
+  document.querySelector(".total__price").textContent = subTotal;
 }
 
 document.querySelectorAll(".reoveItem").forEach(removeBtn => {

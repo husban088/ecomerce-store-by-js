@@ -690,3 +690,12 @@
   .minus {
     padding-right: 0.5rem;
   }
+
+  .empty__head {
+    margin-top: 15rem;
+    font-size: 1.8rem;
+  }
+
+  .continue__button {
+    padding-bottom: 10rem;
+  }

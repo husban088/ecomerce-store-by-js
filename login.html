@@ -154,21 +154,26 @@
         <div class="cartdisp"></div>
 
         <div class="totalPriceCart">
-            <div class="subtotal">total</div>
-            <div class="priceView">
-               <h2><span>Rs,</span> 00</h2> 
-            </div>
+          <div class="subtotal" style="display: none;">total</div>
+          <div class="priceView" style="display: none;">
+            <h2><span>Rs,</span> <span class="total__price">00</span></h2>
+          </div>
+        </div>
+  
+        <div class="buy__btn" style="display: none;">
+          <a href="cart.html" class="buy__button">View cart</a>
         </div>
 
-        <!-- <div id="cartItem">Your cart is empty</div>
-        <p class='cart__title'></p>
-        <div class="foot">
-            <h3>Total</h3>
-            <h2 id="total" class="toishdj">$ 0.00</h2>
-        </div> -->
-
-        <div class="buy__btn">
-            <a href="cart.html" class="buy__button">View cart</a>
+        <div class="end__button" style="display: none;">
+          <a href="buy.html" class="buy__button">Check it out</a>
+        </div>
+  
+        <div class="empty__head" style="display: none;">
+          <h3 class="empty__text">Your cart is empty</h3>
+        </div>
+  
+        <div class="continue__button" style="display: none;">
+          <a href="index.html" class="continue__btn buy__button">Contiue shopping</a>
         </div>
 
     </div>
@@ -476,6 +481,13 @@ function cartNumberDisplay() {
   document.querySelector(".cart__counte").textContent = cartNumbers;
 }
 
+let subtotal = document.querySelector(".subtotal");
+  let priceView = document.querySelector(".priceView");
+  let continue__button = document.querySelector(".continue__button");
+  let empty__head = document.querySelector(".empty__head");
+  let buy__btn = document.querySelector(".buy__btn");
+  let end__button = document.querySelector(".end__button");
+
 function dispCartItem() {
   let html = "";
   let cartItem = JSON.parse(localStorage.getItem("prdInCart")) || [];
@@ -497,6 +509,23 @@ function dispCartItem() {
       </div>`;
   });
   document.querySelector(".cartdisp").innerHTML = html;
+
+  if(html.length === 0) {
+      buy__btn.style.display = "none";
+      subtotal.style.display = "none";
+      priceView.style.display = "none";
+      continue__button.style.display = "block";
+      empty__head.style.display = "block";
+      end__button.style.display = "none";
+    } else {
+      buy__btn.style.display = "block";
+      subtotal.style.display = "block";
+      priceView.style.display = "block";
+      continue__button.style.display = "none";
+      empty__head.style.display = "none";
+      end__button.style.display = "block";
+    }
+
 }
 dispCartItem();
 
@@ -557,7 +586,7 @@ function updateQuantity(input) {
 function cartPrice() {
   let cartItem = JSON.parse(localStorage.getItem("prdInCart")) || [];
   let subTotal = cartItem.reduce((acc, item) => acc + item.totalPrice, 0);
-  document.querySelector(".priceView h2").textContent = subTotal;
+  document.querySelector(".total__price").textContent = subTotal;
 }
 
 document.querySelectorAll(".reoveItem").forEach(removeBtn => {

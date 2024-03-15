@@ -148,10 +148,11 @@
 
             <!-- ====================== CART DETAILS ======================== -->
 
-            <div class="cart__head">
+            <div class="cart__head" style="display: none;">
                 <h1 class="cart__text">Your cart</h1>
             </div>
 
+         <div class="cart__details" style="display: none;">
             <div class="displayItem">
                 <div class="item"><h2>Items</h2></div> 
                 <div class="names"><h2>name</h2></div> 
@@ -159,18 +160,27 @@
                  <div class="quantity"><h2>Quantity</h2></div>
                  <!-- <div class="total"><h2>Total</h2></div>-->
              </div>
+         </div>
 
            
              <div class="cartdisp"></div>
 
              <div class="totalPriceCart">
-                 <div class="subtotal">total</div>
-                 <div class="priceView">
+                 <div class="subtotal" style="display: none;">total</div>
+                 <div class="priceView" style="display: none;">
                     <h2><span>Rs,</span> <span class="total__price">00</span></h2>
                  </div>
              </div>
 
-             <div class="check__button">
+             <div class="empty__head" style="display: none;">
+                <h3 class="empty__text">Your cart is empty</h3>
+              </div>
+
+             <div class="continue__button" style="display: none;">
+                <a href="index.html" class="continue__btn buy__button">Contiue shopping</a>
+              </div>
+
+             <div class="check__button" style="display: none;">
                 <a href="buy.html" class="check__btn">Check it now</a>
              </div>
 

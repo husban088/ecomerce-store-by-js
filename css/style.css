@@ -4221,3 +4221,19 @@ text-align: center;
 #prod__box {
   margin-left: 3rem;
 }
+
+.continue__button {
+  text-align: center;
+}
+
+.empty__head {
+  text-align: center;
+  color: #747474;
+  font-size: 1.5rem;
+  margin-bottom: 7rem;
+}
+
+.end__button {
+  text-align: center;
+  margin-top: 5rem;
+}

@@ -68,6 +68,16 @@ function cartNumberDisplay() {
   document.querySelector(".cart__counte").textContent = cartNumbers;
 }
 
+let check__button = document.querySelector(".check__button");
+
+
+let continue__button = document.querySelector(".continue__button");
+let empty__head = document.querySelector(".empty__head");
+let cart__details = document.querySelector(".cart__details");
+let cart__head = document.querySelector(".cart__head");
+let subtotal = document.querySelector(".subtotal");
+let priceView = document.querySelector(".priceView");
+
 function dispCartItem() {
   let html = "";
   let cartItem = JSON.parse(localStorage.getItem("prdInCart")) || [];
@@ -89,6 +99,25 @@ function dispCartItem() {
       </div>`;
   });
   document.querySelector(".cartdisp").innerHTML = html;
+
+  if(html.length === 0) {
+    check__button.style.display = "none";
+    continue__button.style.display = "block";
+    empty__head.style.display = "block";
+    cart__details.style.display = "none";
+    cart__head.style.display = "none";
+    subtotal.style.display = "none";
+    priceView.style.display = "none";
+  } else {
+    check__button.style.display = "block";
+    continue__button.style.display = "none";
+    empty__head.style.display = "none";
+    cart__details.style.display = "block";
+    cart__head.style.display = "block";
+    subtotal.style.display = "block";
+    priceView.style.display = "block";
+  }
+
 }
 dispCartItem();
 

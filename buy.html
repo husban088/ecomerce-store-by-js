@@ -192,21 +192,21 @@
                     </div>
 
                     <div class="name__input">
-                        <input type="text" class="name__inpt" placeholder="First name" required>
-                        <input type="text" class="name__inpt" placeholder="Last name" required>
+                        <input type="text" class="name__inpt" id="inputValue" placeholder="First name" required>
+                        <input type="text" class="name__inpt" id="inputValue" placeholder="Last name" required>
                     </div>
 
                     <div class="cont__inpts add__con">
-                        <input type="text" class="cont__inpt" name="text" placeholder="Address" required>
+                        <input type="text" class="cont__inpt" id="inputValue" name="text" placeholder="Address" required>
                     </div>
 
                     <div class="name__input">
-                        <input type="text" class="name__inpt" placeholder="City" required>
-                        <input type="text" class="name__inpt" placeholder="Postal code" required>
+                        <input type="text" class="name__inpt" id="inputValue" placeholder="City" required>
+                        <input type="text" class="name__inpt" id="inputValue" placeholder="Postal code" required>
                     </div>
 
                     <div class="cont__inpts">
-                        <input type="number" class="cont__inpt" name="text" placeholder="Phone" required>
+                        <input type="number" class="cont__inpt" id="inputValue" name="text" placeholder="Phone" required>
                     </div>
 
                     <div class="cont__head">
@@ -251,25 +251,33 @@
                         <button type="submit" class="comp__btn">Pay now</button>
                     </div>
 
-                </form>
             </div>
             <div class="col-1-of-2">
+
+                 
                 <div class="prod__cont">
 
                     <div class="cartdisp"></div>
 
                     <div class="totalPriceCart">
-                        <div class="subtotal">total</div>
-                        <div class="priceView">
-                           <h3>00</h3> 
+                        <div class="subtotal" style="display: none;">total</div>
+                        <div class="priceView" style="display: none;">
+                            <h2><span>Rs,</span> <span class="total__price">00</span></h2>
                         </div>
                     </div>
 
-                    <div class="comp__button" id="comp__button">
-                        <button type="submit" class="comp__btn">Pay now</button>
+                    <div class="continue__button" style="display: none;">
+                        <a href="index.html" class="continue__btn buy__button">Contiue shopping</a>
                     </div>
 
                 </div>
+
+                <div class="comp__button" id="comp__button" style="margin-bottom: 6rem;">
+                    <button type="submit" class="comp__btn">Pay now</button>
+                </div>
+
+            </form>
+
             </div>
         </div>
     </section>

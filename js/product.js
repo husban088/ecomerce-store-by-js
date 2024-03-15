@@ -233,6 +233,13 @@ function cartNumberDisplay() {
   document.querySelector(".cart__counte").textContent = cartNumbers;
 }
 
+let subtotal = document.querySelector(".subtotal");
+let priceView = document.querySelector(".priceView");
+let continue__button = document.querySelector(".continue__button");
+let empty__head = document.querySelector(".empty__head");
+let buy__btn = document.querySelector(".buy__btn");
+let end__button = document.querySelector(".end__button");
+
 function dispCartItem() {
   let html = "";
   let cartItem = JSON.parse(localStorage.getItem("prdInCart")) || [];
@@ -254,6 +261,23 @@ function dispCartItem() {
       </div>`;
   });
   document.querySelector(".cartdisp").innerHTML = html;
+
+  if(html.length === 0) {
+    buy__btn.style.display = "none";
+    subtotal.style.display = "none";
+    priceView.style.display = "none";
+    continue__button.style.display = "block";
+    empty__head.style.display = "block";
+    end__button.style.display = "none";
+  } else {
+    buy__btn.style.display = "block";
+    subtotal.style.display = "block";
+    priceView.style.display = "block";
+    continue__button.style.display = "none";
+    empty__head.style.display = "none";
+    end__button.style.display = "block";
+  }
+
 }
 dispCartItem();
 
@@ -314,7 +338,7 @@ function updateQuantity(input) {
 function cartPrice() {
   let cartItem = JSON.parse(localStorage.getItem("prdInCart")) || [];
   let subTotal = cartItem.reduce((acc, item) => acc + item.totalPrice, 0);
-  document.querySelector(".priceView h3").textContent = subTotal;
+  document.querySelector(".total__price").textContent = subTotal;
 }
 
 document.querySelectorAll(".reoveItem").forEach(removeBtn => {

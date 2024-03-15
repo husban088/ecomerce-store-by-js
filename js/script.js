@@ -7,8 +7,6 @@ window.onload = function() {
 }
 
 
-
-
 const btn = document.getElementsByClassName('prod__btn');
 
 const products = []
@@ -83,6 +81,13 @@ window.addEventListener ("load" , function () {
     document.querySelector("#cart__count").textContent = cartNumbers;
     document.querySelector(".cart__counte").textContent = cartNumbers;
   }
+
+  let subtotal = document.querySelector(".subtotal");
+  let priceView = document.querySelector(".priceView");
+  let continue__button = document.querySelector(".continue__button");
+  let empty__head = document.querySelector(".empty__head");
+  let buy__btn = document.querySelector(".buy__btn");
+  let end__button = document.querySelector(".end__button");
   
   function dispCartItem() {
     let html = "";
@@ -105,6 +110,23 @@ window.addEventListener ("load" , function () {
         </div>`;
     });
     document.querySelector(".cartdisp").innerHTML = html;
+
+    if(html.length === 0) {
+      buy__btn.style.display = "none";
+      subtotal.style.display = "none";
+      priceView.style.display = "none";
+      continue__button.style.display = "block";
+      empty__head.style.display = "block";
+      end__button.style.display = "none";
+    } else {
+      buy__btn.style.display = "block";
+      subtotal.style.display = "block";
+      priceView.style.display = "block";
+      continue__button.style.display = "none";
+      empty__head.style.display = "none";
+      end__button.style.display = "block";
+    }
+
   }
   dispCartItem();
   
