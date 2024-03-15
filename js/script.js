@@ -228,35 +228,5 @@ window.addEventListener ("load" , function () {
         }
         
 
-    // for add the product to the page
-
-        const prod__sec = document.querySelector("#prod__sec");
-        let box__four = document.querySelector("#box__four"); 
-        const productArr = JSON.parse(localStorage.getItem("productsList"));
-        localStorage.setItem("addHome", true);        
-        if (!productArr || productArr.length === 0) {
-          console.log("No new product added");
-        } else {
-         box__four.style.transform = "translate(90rem, -34.5rem)";
-          productArr.forEach((product) => {
-            const markUp = `
-            <div class="col-1-of-4 box__one" id="box__one">
-            <div class="prod__box" id="prod__box">
-                <div class="prod__image" id="prod__image">
-                    <img src="${product.image}" alt="men thsirt" class="prod__img">
-                </div>
-                <div class="prod__details">
-                    <h3 class="prod__name">${product.name}</h3>
-                    <p class="prod__price">${product.price}</p>
-                </div>
-
-                <div class="prod__button">
-                    <button class="prod__btn" id="prod__btn">Add to cart</button>
-                </div>
-                
-            </div>
-        </div>`;
-            prod__sec.innerHTML += markUp;      });    
-        }
 
 

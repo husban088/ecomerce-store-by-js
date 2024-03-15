@@ -86,76 +86,158 @@
     }
   }
 
-  @media only screen and (max-width: 550px) {
-    
+  @media only screen and (max-width: 560px) {
+    .cartdisp {
+      transform: translateX(8rem);
+    }
+
+    .quan__boxes {
+      padding: 0.7rem 1rem;
+      width: 20%;
+      transform: translateX(-13rem);
+    }
+
+    .remove__icon {
+      transform: translateX(-17rem);
+    }  
+
+    .totalPriceCart {
+      transform: translateX(-2rem);
+    }
   }
 
   @media only screen and (max-width: 460px) {
     .cartlist{
-        transform: translateX(2rem);
-    }
-
-    .cart__quan {
-        transform: translate(-11rem, 0.1rem);
-        border: 1px solid #000;
-        padding: 0.5rem 2rem;
-        border-radius: 3px;
+        transform: translateX(0.1rem);
     }
 
     .cart__name {
-        transform: translate(-7rem, -2rem);
+        transform: translate(-3rem, -2rem);
         font-size: 1.4rem;
     }
 
     .remove__icon {
-        transform: translateX(-10rem);
+        transform: translateX(-17rem);
       }
   }
 
   @media only screen and (max-width: 420px) {
     .cart__price {
-        transform: translate(-16rem, 1rem);
+        transform: translate(-10rem, 1rem);
         font-size: 1.4rem;
+    }
+
+    .quan__boxes {
+      padding: 0.7rem 1rem;
+      width: 20%;
+      transform: translateX(-10rem);
+    }
+
+    .remove__icon {
+      transform: translateX(-14rem);
+    }
+
+    .cartlist {
+      transform: translateX(-1.5rem);
     }
   }
 
   @media only screen and (max-width: 400px) {
     .cart__price {
-        transform: translate(-16rem, 1rem);
+        transform: translate(-10rem, 0.5rem);
         font-size: 1.4rem;
     }
 
+    .cartlist {
+      transform: translateX(1rem);
+    }
+
+    .quan__boxes {
+      padding: 0.7rem 1rem;
+      width: 25%;
+      transform: translate(-18.5rem, 5rem);
+    }
+
     #cart__image {
-        width: 19%;
+        width: 22%;
         transform: translateX(-5rem);
       }
 
-      .cart__quan {
-        transform: translate(-8rem, 0.1rem);
-        border: 1px solid #000;
-        padding: 0.5rem 2rem;
-        border-radius: 3px;
-    }
+      .totalPriceCart {
+        margin-top: 9rem;
+      }
 
     .remove__icon {
-        transform: translateX(-7rem);
+        transform: translateX(-21rem);
       }
 
     .cart__name {
-        transform: translate(-6rem, -1.7rem);
+        transform: translate(-3.5rem, -2.5rem);
         font-size: 1.4rem;
     }
   }
 
   @media only screen and (max-width: 350px) {
     .cart__price {
-        transform: translate(-14rem, 1rem);
+        transform: translate(-10rem, 1rem);
         font-size: 1.4rem;
     }
 
+    .cartlist {
+      transform: translateX(-1.5rem);
+    }
+
+    .quan__boxes {
+      padding: 0.7rem 1rem;
+      width: 25%;
+      transform: translate(-16rem, 5rem);
+    }
+
+
+    #cart__image {
+      width: 27%;
+      transform: translateX(-5rem);
+    }
+
     .cart__name {
-        transform: translate(-5rem, -1.7rem);
+        transform: translate(-3.5rem, -1.7rem);
         font-size: 1.4rem;
+    }
+
+    .remove__icon {
+      transform: translateX(-16.5rem);
+    }
+  } 
+
+  @media only screen and (max-width: 320px) {
+    .cart__price {
+        transform: translate(-10rem, 1rem);
+        font-size: 1.4rem;
+    }
+
+    .cartlist {
+      transform: translateX(-2rem);
+    }
+
+    .quan__boxes {
+      padding: 0.7rem 1rem;
+      width: 25%;
+      transform: translate(-15.5rem, 5rem);
+    }
+
+
+    #cart__image {
+      width: 27%;
+      transform: translateX(-5rem);
+    }
+
+    .cart__name {
+        transform: translate(-3.5rem, -1.7rem);
+        font-size: 1.4rem;
+    }
+
+    .remove__icon {
+      transform: translateX(-14rem);
     }
   } 
 

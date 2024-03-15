@@ -92,6 +92,12 @@ function displayProducts() {
 
     productPrice.classList.add("prod__price");
 
+    // var productButton = document.createElement('p');
+    // productButton.textContent = "Add to cart";
+    // productCard.appendChild(productButton);
+
+    // productButton.classList.add("prod__btn");
+
     // var productSize = document.createElement('p');
     // productSize.textContent = product.size;
     // productCard.appendChild(productSize);
