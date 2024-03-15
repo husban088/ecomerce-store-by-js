@@ -72,6 +72,7 @@ window.addEventListener ("load" , function () {
     localStorage.setItem("prdInCart", JSON.stringify(cartItem));
     cartNumberDisplay();
     location.href = "#cart__side";
+    window.location.reload();
   }
   
   function cartNumberDisplay() {
