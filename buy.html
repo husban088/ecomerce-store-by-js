@@ -310,6 +310,8 @@ var view__link = document.querySelector(".view__prof");
 
 var wel__text = document.querySelector(".wel__text");
 
+var sign__inw = document.querySelector(".sign__inw");
+
 if(signIn === "true") {
     logout_btnes.style.display = "block";
     view__link.style.display = "block";
@@ -318,6 +320,7 @@ if(signIn === "true") {
     logout_btnes.style.display = "none";
     view__link.style.display = "none";
     wel__text.innerHTML = "Please create a account";
+    sign__inw.style.display = "none";
 }
 
 function logPage(e) {
@@ -356,8 +359,32 @@ if(saveName === "true") {
     let con__inpt = document.querySelector("#con__inpt");
     con__inpt.style.display = "none"
 
-    let welcome__namewe = localStorage.getItem("welcomeName");
-    document.querySelector(".loginIN").innerHTML = welcome__namewe;
+    
+
+    let welcome__namewe = document.querySelector(".welcome__namew");
+
+let saveName = localStorage.getItem("saveName");
+if (saveName === "true") {
+  let welcome__namewe = localStorage.getItem("welcomeName");
+  document.querySelector(".loginIN").innerHTML = welcome__namewe;
+
+  let sign__inw = document.querySelector(".sign__inw");
+
+  sign__inw.style.display = "none";
+
+  // let welcome__namew = document.querySelector(".welcome__namew");
+
+  // welcome__namew.style.display = "block";
+
+  // let welcome__name = document.querySelector(".welcome__name");
+
+  // welcome__name.style.display = "none";
+}
+
+
+
+
+
 
 }
 
